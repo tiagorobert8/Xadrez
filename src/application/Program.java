@@ -34,9 +34,9 @@ public class Program {
                 UI.printBoard(chessMatch.getPieces(), possibleMoves);
                 System.out.println();
                 System.out.print("Target: ");
-                ChessPosition targert = UI.readChessPsotion(sc);
+                ChessPosition target = UI.readChessPsotion(sc);
 
-                ChessPiece capturedPiece = chessMatch.performChessMove(source, targert);
+                ChessPiece capturedPiece = chessMatch.performChessMove(source, target);
               
                 if (capturedPiece != null){
                     captured.add(capturedPiece);
